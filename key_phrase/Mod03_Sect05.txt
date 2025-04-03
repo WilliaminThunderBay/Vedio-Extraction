@@ -1,0 +1,21 @@
+Key Phrases:
+- training data
+- data set
+- linear learner
+- target variable
+- test data
+- algorithm use
+- builtin algorithm
+- data training
+- instance type
+- learner algorithm
+- linear learner algorithm
+- sagemaker algorithm
+- sagemaker provides
+- split data
+- train model
+- training job
+- algorithm attempt
+- algorithm provides
+- algorithm support
+- choose best

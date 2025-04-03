@@ -1,0 +1,21 @@
+Key Phrases:
+- data catalog
+- data source
+- etl job
+- glue data
+- glue data catalog
+- new data
+- catalog etl
+- data catalog etl
+- data data
+- data set
+- data store
+- extract transform
+- extract transform load
+- glue data catalog etl
+- new data set
+- python scala
+- transform data
+- transform load
+- zip file
+- analysis data

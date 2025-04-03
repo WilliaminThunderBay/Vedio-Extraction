@@ -1,0 +1,21 @@
+Key Phrases:
+- deploy model
+- low latency
+- multimodel endpoint
+- multiple model
+- trained model
+- batch transform
+- compute instance
+- create endpoint
+- data processing
+- data processing step
+- deploy trained
+- deploy trained model
+- ec instance
+- entire dataset
+- host model
+- host multiple
+- host multiple model
+- inference pipeline
+- model create
+- model create endpoint
