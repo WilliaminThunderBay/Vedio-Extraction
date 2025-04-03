@@ -1,0 +1,21 @@
+Key Phrases:
+- bounding box
+- confidence score
+- data stream
+- facial detection
+- facial recognition
+- image id
+- stream processor
+- create collection
+- kinesis data
+- kinesis data stream
+- known face
+- analysis result
+- based visual
+- bounding box coordinate
+- box coordinate
+- collection image
+- detection feature
+- external image
+- external image id
+- face collection

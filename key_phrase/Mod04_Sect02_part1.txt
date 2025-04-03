@@ -1,0 +1,21 @@
+Key Phrases:
+- time series
+- missing value
+- time stamp
+- sale data
+- series data
+- time series data
+- finely grained
+- finely grained time
+- grained time
+- calculate missing
+- data point
+- data set
+- known value
+- missing data
+- smooth data
+- smoothing data
+- calculate missing value
+- case need
+- daily data
+- data able

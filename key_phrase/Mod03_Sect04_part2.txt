@@ -1,0 +1,21 @@
+Key Phrases:
+- missing value
+- missing data
+- value missing
+- value missing value
+- impute missing
+- impute missing value
+- row missing
+- row missing data
+- clean dataset
+- data collection
+- data missing
+- dataset missing
+- decide drop
+- describes number
+- drop row
+- drop row missing
+- drop row missing data
+- mean median
+- missing value data
+- missing value usually

@@ -1,0 +1,21 @@
+Key Phrases:
+- false positive
+- positive rate
+- true positive
+- false positive rate
+- mean squared
+- metric use
+- true negative
+- confusion matrix
+- evaluate model
+- mean squared error
+- squared error
+- cat cat
+- classification model
+- classified sample
+- credit card
+- data model
+- difference prediction
+- difference prediction actual
+- email message
+- email message spam

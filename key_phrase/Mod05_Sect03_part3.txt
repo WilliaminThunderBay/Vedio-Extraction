@@ -1,0 +1,21 @@
+Key Phrases:
+- custom label
+- recognition custom
+- recognition custom label
+- ground truth
+- model performance
+- test dataset
+- test image
+- cat label
+- data set
+- entire test
+- label image
+- metric label
+- return cat
+- test data
+- test data set
+- bounding box
+- correctly classified
+- entire test data
+- entire test data set
+- label average

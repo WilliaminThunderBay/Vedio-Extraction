@@ -1,0 +1,21 @@
+Key Phrases:
+- confidence score
+- lambda function
+- analyzes image
+- aspect property
+- confidence level
+- detected object
+- detected object image
+- image inappropriate
+- image stored
+- label confidence
+- managed service
+- object image
+- performs prediction
+- performs prediction return
+- prediction return
+- recognition analyzes
+- recognition analyzes image
+- recognition sdk
+- user picture
+- user uploads
