@@ -1,6 +1,0 @@
-Topics:
-Topic: module
-Topic: aws academy machine
-Topic: introduction natural language processing module
-Topic: know nlp section
-Topic: description major challenge

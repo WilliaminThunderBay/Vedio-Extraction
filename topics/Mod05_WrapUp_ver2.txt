@@ -1,6 +1,0 @@
-Topics:
-Topic: main point module module
-Topic: use case
-Topic: amazon manage machine learn service available image video analysis list step
-Topic: custom dataset object detection
-Topic: amazon sagemaker ground truth

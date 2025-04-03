@@ -1,6 +1,0 @@
-Topics:
-Topic: byte
-Topic: data collection reviewing
-Topic: extract transform load datum datum
-Topic: different system datum provider present challenge
-Topic: datum source

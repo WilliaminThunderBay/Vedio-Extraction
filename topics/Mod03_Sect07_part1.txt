@@ -1,6 +1,0 @@
-Topics:
-Topic: two metric
-Topic: module section
-Topic: model success
-Topic: model time
-Topic: evaluate model

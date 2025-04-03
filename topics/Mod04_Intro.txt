@@ -1,6 +1,0 @@
-Topics:
-Topic: aws academy
-Topic: module aw academy machine learn module
-Topic: look
-Topic: introduction forecasting
-Topic: look time series

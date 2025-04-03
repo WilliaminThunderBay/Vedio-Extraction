@@ -1,6 +1,0 @@
-Topics:
-Topic: today
-Topic: linear
-Topic: second
-Topic: half
-Topic: section

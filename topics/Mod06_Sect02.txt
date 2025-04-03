@@ -1,6 +1,0 @@
-Topics:
-Topic: amazon
-Topic: section
-Topic: manage machine learn service
-Topic: use case service simplify process
-Topic: machine learning application

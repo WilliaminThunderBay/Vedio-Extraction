@@ -1,6 +1,0 @@
-Topics:
-Topic: algorithm need numerical data
-Topic: day week
-Topic: age birth month day week
-Topic: variable day week
-Topic: section
