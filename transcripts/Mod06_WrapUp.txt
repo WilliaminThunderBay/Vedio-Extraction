@@ -1,0 +1,1 @@
+ Welcome back! It's now time to review the module and wrap it up. In summary, in this module you learn how to describe the NLP use cases that are solved by using managed Amazon ML services, and describe the managed ML services available for NLP. Good job! Thanks for watching, we'll see you in the next module.
