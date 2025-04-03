@@ -1,2 +1,0 @@
-Module 4: Introducing Forecasting
-Section 2: Processing time series data

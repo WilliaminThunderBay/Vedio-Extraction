@@ -1,2 +1,0 @@
-Module 5: Introduction to Computer Vision
-Module wrap-up

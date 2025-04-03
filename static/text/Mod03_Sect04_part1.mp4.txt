@@ -1,2 +1,0 @@
-Module 3: Implementing a Machine Learning Pipeline with Amazon SageMaker
-Section 4: Feature engineering

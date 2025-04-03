@@ -1,2 +1,0 @@
-Module 2: Introduction to Machine Learning 
-Section 2: Business problems solved with machine learning

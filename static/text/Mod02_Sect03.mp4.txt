@@ -1,2 +1,0 @@
-Module 2: Introduction to Machine Learning 
-Section 3: Machine learning process
