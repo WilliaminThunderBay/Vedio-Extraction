@@ -1,0 +1,224 @@
+{   'Mod01_Course Overview.mp4': [   'AWS Academy Machine Learning Foundations '
+                                     'Module 1: Welcome to AWS Academy Machine '
+                                     'Learning Foundations'],
+    'Mod02_Intro.mp4': [   'AWS Academy Machine Learning Foundations Module 2: '
+                           'Introduction to Machine Learning'],
+    'Mod02_Sect01.mp4': [   'Module 2: Introduction to Machine Learning',
+                            'Section 1: What is machine learning ?',
+                            'aWS academy',
+                            '2020, Amazon Web Services; Inc. or its '
+                            'Affiliates  All rights reserved:'],
+    'Mod02_Sect02.mp4': [   'Module 2: Introduction to Machine Learning '
+                            'Section 2: Business problems solved with machine '
+                            'learning'],
+    'Mod02_Sect03.mp4': [   'Module 2: Introduction to Machine Learning '
+                            'Section 3: Machine learning process'],
+    'Mod02_Sect04.mp4': [   'Module 2: Introduction to Machine Learning '
+                            'Section 4: Machine learning tools overview'],
+    'Mod02_Sect05.mp4': [   'Module 2: Introduction to Machine Learning '
+                            'Section 5: Machine learning challenges'],
+    'Mod02_WrapUp.mp4': [   'Module 2: Introduction to Machine Learning',
+                            'Module wrap-up'],
+    'Mod03_Intro.mp4': [   'AWS Academy Machine Learning Foundations Module 3: '
+                           'Implementing a Machine Learning Pipeline with '
+                           'Amazon SageMaker'],
+    'Mod03_Sect01.mp4': [   'Module 3: Implementing a Machine Learning '
+                            'Pipeline with Amazon SageMaker',
+                            'Section 1: Formulating machine learning problems'],
+    'Mod03_Sect02_part1.mp4': [   'Module 3: Implementing a Machine Learning '
+                                  'Pipeline with Amazon SageMaker',
+                                  'Section 2: Collecting and securing data'],
+    'Mod03_Sect02_part2.mp4': [   'Module 3: Implementing a Machine Learning '
+                                  'Pipeline with Amazon SageMaker Section 2a: '
+                                  'Extracting, transforming and loading data',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates. All rights reserved.'],
+    'Mod03_Sect02_part3.mp4': [   'Module 3: Implementing a Machine Learning '
+                                  'Pipeline with Amazon SageMaker',
+                                  'Section 2b: Securing your data',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates  All rights reserved:'],
+    'Mod03_Sect03_part1.mp4': [   'Module 3: Implementing a Machine Learning '
+                                  'Pipeline with Amazon SageMaker',
+                                  'Section 3: Evaluating your data',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates  All rights reserved:'],
+    'Mod03_Sect03_part2.mp4': [   'Module 3: Implementing a Machine Learning '
+                                  'Pipeline with Amazon SageMaker',
+                                  'Section 3a: Describing your data',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates  All rights reserved:'],
+    'Mod03_Sect03_part3.mp4': [   'Module 3: Implementing a Machine Learning '
+                                  'Pipeline with Amazon SageMaker',
+                                  'Section 3b: Finding correlations',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates  All rights reserved:'],
+    'Mod03_Sect04_part1.mp4': [   'Module 3: Implementing a Machine Learning '
+                                  'Pipeline with Amazon SageMaker',
+                                  'Section 4: Feature engineering',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates  All rights reserved:'],
+    'Mod03_Sect04_part2.mp4': [   'Module 3: Implementing a Machine Learning '
+                                  'Pipeline with Amazon SageMaker',
+                                  'Section 4a: Cleaning your data',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates  All rights reserved:'],
+    'Mod03_Sect04_part3.mp4': [   'Module 3: Implementing a Machine Learning '
+                                  'Pipeline with Amazon SageMaker Section 4b '
+                                  'Dealing with outliers and selecting '
+                                  'features',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates. All rights reserved.'],
+    'Mod03_Sect05.mp4': [   'Module 3: Implementing a Machine Learning '
+                            'Pipeline with Amazon SageMaker Section 5: '
+                            'Training',
+                            'aWS academy',
+                            '2020, Amazon Web Services; Inc. or its '
+                            'Affiliates. All rights reserved.'],
+    'Mod03_Sect06.mp4': [   'Module 3: Implementing a Machine Learning '
+                            'Pipeline with Amazon SageMaker',
+                            'Section 6: Hosting and using the model',
+                            'aWS academy',
+                            '2020, Amazon Web Services; Inc. or its '
+                            'Affiliates  All rights reserved:'],
+    'Mod03_Sect07_part1.mp4': [   'Module 3: Implementing a Machine Learning '
+                                  'Pipeline with Amazon SageMaker Section 7: '
+                                  'Evvaluating the accuracy of the model',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services, Inc  or its '
+                                  'Affiliates All rights reserved:'],
+    'Mod03_Sect07_part2.mp4': [   'Module 3: Implementing a Machine Learning '
+                                  'Pipeline with Amazon SageMaker Section 7a: '
+                                  'Calculating classification metrics',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates. All rights reserved.'],
+    'Mod03_Sect07_part3.mp4': [   'Module 3: Implementing a Machine Learning '
+                                  'Pipeline with Amazon SageMaker Section 7b: '
+                                  'Selecting classification thresholds',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates. All rights reserved.'],
+    'Mod03_Sect08.mp4': [   'Module 3: Implementing a Machine Learning '
+                            'Pipeline with Amazon SageMaker',
+                            'Section 8: Hyperparameter and model tuning',
+                            'aWS academy',
+                            '2020, Amazon Web Services; Inc. or its '
+                            'Affiliates. All rights reserved.'],
+    'Mod03_WrapUp.mp4': [   'Module 3: Implementing a Machine Learning '
+                            'Pipeline with Amazon SageMaker',
+                            'Module wrap-up',
+                            'aWS academy',
+                            '2020, Amazon Web Services; Inc. or its '
+                            'Affiliates. All rights reserved.'],
+    'Mod04_Intro.mp4': [   'AWS Academy Machine Learning Foundations Module 4: '
+                           'Introducing Forecasting',
+                           'aWS academy',
+                           '2020, Amazon Web Services; Inc. or its Affiliates: '
+                           'All rights reserved:'],
+    'Mod04_Sect01.mp4': [   'Module 4: Introducing Forecasting',
+                            'Section 1: Forecasting overview',
+                            'aWS academy',
+                            '2020, Amazon Web Services; Inc. or its '
+                            'Affiliates  All rights reserved:'],
+    'Mod04_Sect02_part1.mp4': [   'Module 4: Introducing Forecasting',
+                                  'Section 2: Processing time series data',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates  All rights reserved:'],
+    'Mod04_Sect02_part2.mp4': [   'Module 4: Introducing Forecasting',
+                                  'Section 2a: Special considerations for time '
+                                  'series data',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates. All rights reserved.'],
+    'Mod04_Sect02_part3.mp4': [   'Module 4: Introducing Forecasting',
+                                  'Section 3: Using Amazon Forecast',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates  All rights reserved:'],
+    'Mod04_WrapUp.mp4': [   'Module 4: Introducing Forecasting',
+                            'Module wrap-up',
+                            'aWS academy',
+                            '2020, Amazon Web Services; Inc. or its '
+                            'Affiliates. All rights reserved.'],
+    'Mod05_Intro.mp4': [   'AWS Academy Machine Learning Foundations Module 5: '
+                           'Introducing Computer Vision',
+                           'aWS academy',
+                           '2020, Amazon Web Services; Inc. or its Affiliates: '
+                           'All rights reserved:'],
+    'Mod05_Sect01_ver2.mp4': [   'Module 5: Introduction to Computer Vision',
+                                 'Section 1: Introduction to computer vision',
+                                 'aWS academy',
+                                 '2020, Amazon Web Services; Inc. or its '
+                                 'Affiliates  All rights reserved:'],
+    'Mod05_Sect02_part1_ver2.mp4': [   'Module 5: Introduction to Computer '
+                                       'Vision',
+                                       'Section 2: Image and video analysis',
+                                       'aWS academy',
+                                       '2020, Amazon Web Services, Inc  or its '
+                                       'Affiliates All rights reserved:'],
+    'Mod05_Sect02_part2.mp4': [   'Module 5: Introducing Computer Vision '
+                                  'Section 2a: Facial recognition',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates  All rights reserved:'],
+    'Mod05_Sect03_part1.mp4': [   'Module 5: Introducing Computer Vision '
+                                  'Section 3: Preparing custom datasets for '
+                                  'computer vision',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates. All rights reserved.'],
+    'Mod05_Sect03_part2.mp4': [   'Module 5: Introducing Computer Vision '
+                                  'Section 3a: Creating the training dataset',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates  All rights reserved:'],
+    'Mod05_Sect03_part3.mp4': [   'Module 5: Introducing Computer Vision '
+                                  'Section 3b: Creating the test dataset',
+                                  'aWS academy',
+                                  '2020, Amazon Web Services; Inc. or its '
+                                  'Affiliates  All rights reserved:'],
+    'Mod05_Sect03_part4_ver2.mp4': [   'Module 5: Introduction to Computer '
+                                       'Vision Section 3c: Evaluating and '
+                                       'improving your model',
+                                       'aWS academy',
+                                       '2020, Amazon Web Services, Inc  or its '
+                                       'Affiliates All rights reserved:'],
+    'Mod05_WrapUp_ver2.mp4': [   'Module 5: Introduction to Computer Vision',
+                                 'Module wrap-up',
+                                 'aWS academy',
+                                 '2020, Amazon Web Services; Inc. or its '
+                                 'Affiliates  All rights reserved:'],
+    'Mod06_Intro.mp4': [   'AWS Academy Machine Learning Foundations Module 6: '
+                           'Introducing Natural Language Processing',
+                           'aWS academy',
+                           '2020, Amazon Web Services; Inc. or its Affiliates. '
+                           'All rights reserved.'],
+    'Mod06_Sect01.mp4': [   'Module 6: Introducing Natural Language Processing '
+                            'Section 1: Overview of natural language '
+                            'processing',
+                            'aWS academy',
+                            '2020, Amazon Web Services; Inc. or its '
+                            'Affiliates. All rights reserved.'],
+    'Mod06_Sect02.mp4': [   'Module 6: Introducing Natural Language Processing '
+                            'Section 2: Natural language processing managed '
+                            'services',
+                            'aWS academy',
+                            '2020, Amazon Web Services; Inc. or its '
+                            'Affiliates. All rights reserved.'],
+    'Mod06_WrapUp.mp4': [   'Module 6: Introducing Natural Language Processing '
+                            'Module wrap-up',
+                            'aWS academy',
+                            '2020, Amazon Web Services; Inc. or its '
+                            'Affiliates. All rights reserved.'],
+    'Mod07_Sect01.mp4': [   'AWS Academy Machine Learning Foundations Module '
+                            '7: Course Wrap-up']}
