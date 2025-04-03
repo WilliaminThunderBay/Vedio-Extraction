@@ -1,0 +1,6 @@
+Topics:
+Topic: second
+Topic: encode data categorical data
+Topic: section
+Topic: feature engineering feature
+Topic: impactful thing

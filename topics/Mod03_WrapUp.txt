@@ -1,0 +1,6 @@
+Topics:
+Topic: time review module wrap knowledge check module
+Topic: formulate problem business request
+Topic: secure datum machine learning
+Topic: jupyt notebook
+Topic: amazon sagemaker outline process
