@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Dashboard - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        /* 让html,body占满整个视口 */
+        html, body {
+            height: 100%;
+            margin: 0; /* 去掉默认边距 */
+            padding: 0;
+        }
+        /* container-fluid和row也撑满高度 */
+        .container-fluid, .row {
+            height: 100%;
+        }
+
+        /* 左侧静态侧边栏：让它自己滚动 */
+        .sidebar {
+            height: 100%;
+            overflow-y: auto; /* 如果内容过多，可单独滚动 */
+            padding: 15px;
+            border-right: 1px solid #ddd;
+        }
+        /* 鼠标悬停出现灰色条 */
+        .nav-link:hover {
+            background-color: #f2f2f2 !important;
+        }
+
+        /* 右侧主内容区：同样可滚动 */
+        .main-content {
+            height: 100%;
+            overflow-y: auto; /* 主内容区可独立滚动 */
+            padding: 1rem;
+        }
+
+        /* 让Logo & 搜索栏共存一行 */
+        .top-bar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem; /* 与下方内容留些间距 */
+        }
+        .youtube-logo {
+            height: 30px; /* 你可以按需调整大小 */
+        }
+
+        /* 搜索栏 */
+        .search-bar-container {
+            display: flex;
+            justify-content: flex-start;
+            flex: 1; /* 占用剩余空间，让搜索栏撑开 */
+        }
+        .search-bar-form {
+            display: flex;
+            align-items: center;
+            width: 60%; /* 可根据需要调整 */
+            margin: 0 auto;
+        }
+        .search-input {
+            flex: 1;
+            border-radius: 2rem 0 0 2rem; /* 左侧圆角 */
+            border-right: none;
+        }
+        .search-btn {
+            border-radius: 0 2rem 2rem 0; /* 右侧圆角 */
+            border-left: none;
+        }
+        .search-icon {
+            font-size: 1.2rem; /* 调整图标大小 */
+        }
+
+        /* 卡片样式 */
+        .video-card {
+            position: relative; /* 为了定位内部 video */
+            cursor: pointer;
+            transition: transform 0.2s;
+            overflow: hidden; /* 防止视频预览溢出卡片边界 */
+        }
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+        /* 封面图 */
+        .video-thumbnail {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: opacity 0.3s;
+        }
+        /* 悬停预览视频：带进度条/音量，但只在真正播放时才请求资源 */
+        .hover-preview {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            opacity: 0;
+            pointer-events: none; /* 初始不可点 */
+            transition: opacity 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <!-- 左侧静态侧边栏：单独可滚动 -->
+        <div class="col-md-2 sidebar">
+            <h5><strong>NLP-AWS-Project</strong></h5>
+
+            <!-- 上半分区：Home & Semantic Search -->
+            <ul class="list-unstyled mb-3 mt-3">
+                <li>
+                    <a href="{{ url_for('index') }}" class="nav-link text-dark d-flex align-items-center py-2">
+                        <i class="bi bi-house-door fs-5 me-2"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('semantic_search') }}" class="nav-link text-dark d-flex align-items-center py-2">
+                        <i class="bi bi-search fs-5 me-2"></i>
+                        <span>Semantic Search</span>
+                    </a>
+                </li>
+            </ul>
+            <hr>
+
+            <!-- 下半分区：显示所有视频 -->
+            <h6>Subscriptions</h6>
+            <ul class="list-unstyled">
+                {% for video in videos %}
+                    {% set base = video.rsplit('.', 1)[0] %}
+                    <li>
+                        <a href="{{ url_for('video_detail', filename=video) }}" class="nav-link text-dark d-flex align-items-center py-2">
+                            <i class="bi bi-dot fs-5 me-2"></i>
+                            <span>{{ base }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- 右侧主内容区：也可滚动 -->
+        <div class="col-md-10 main-content">
+            <!-- 顶部条：YouTube Logo + 搜索框 -->
+            <div class="top-bar">
+                <!-- 点击Logo回Home -->
+                <a href="{{ url_for('index') }}">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
+                         alt="YouTube"
+                         class="youtube-logo">
+                </a>
+
+                <!-- 搜索栏容器 -->
+                <div class="search-bar-container">
+                    <form method="POST" class="search-bar-form">
+                        <input type="text"
+                               name="query"
+                               class="form-control search-input"
+                               placeholder="Search videos..."
+                               value="{{ query }}">
+                        <button class="btn btn-outline-secondary search-btn" type="submit">
+                            <i class="bi bi-search search-icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 视频卡片展示（网格布局） -->
+            <div class="row" id="videoGrid">
+                {% for video in videos %}
+                    {% set base = video.rsplit('.', 1)[0] %}
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <!-- 整个卡片可点击跳转详情 -->
+                        <a href="{{ url_for('video_detail', filename=video) }}" style="text-decoration: none; color: inherit;">
+                            <div class="card video-card" data-video="{{ video }}">
+                                <!-- 封面图 -->
+                                <img src="{{ url_for('static', filename='thumbnails/' + video + '.jpg') }}"
+                                     class="video-thumbnail"
+                                     alt="{{ base }}"
+                                     onerror="this.onerror=null;this.src='https://via.placeholder.com/320x180?text=No+Thumbnail';">
+
+                                <!-- 预览视频(可拖进度/可开声音), preload=none 避免自动加载 -->
+                                <video class="hover-preview" controls preload="none" muted
+                                       onerror="this.onerror=null;this.style.display='none';">
+                                    <source src="{{ url_for('serve_video', filename=video) }}" type="video/mp4">
+                                </video>
+
+                                <div class="card-body px-0">
+                                    <p class="video-title">{{ base }}</p>
+                                    <p class="video-description">{{ text_data.get(video, "No description available.") }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+                {% if videos|length == 0 %}
+                    <p>No videos found matching your query.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// 全局：只允许同时预览 1 个卡片
+let currentPreviewCard = null;
+// 定时器ID
+let previewTimer = null;
+
+// IntersectionObserver，用于懒加载(只给在可视区域的卡片绑定 hover 事件)
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            // 进入视口 => 绑定 hover 事件
+            attachHoverEvents(entry.target);
+        } else {
+            // 离开视口 => 移除 hover 事件
+            detachHoverEvents(entry.target);
+        }
+    });
+}, {
+    root: null,      // 容器: 浏览器视口
+    rootMargin: "0px",
+    threshold: 0.1   // 卡片 10% 出现在视口就算进入
+});
+
+// 对所有卡片进行观察
+document.querySelectorAll('.video-card').forEach(card => {
+    observer.observe(card);
+});
+
+/** 给卡片绑定 onmouseenter/onmouseleave 并设 preload=none (已在HTML里) */
+function attachHoverEvents(card) {
+    card.addEventListener('mouseenter', handleMouseEnter);
+    card.addEventListener('mouseleave', handleMouseLeave);
+}
+function detachHoverEvents(card) {
+    card.removeEventListener('mouseenter', handleMouseEnter);
+    card.removeEventListener('mouseleave', handleMouseLeave);
+}
+
+// 处理鼠标进入
+function handleMouseEnter(e) {
+    const card = e.currentTarget;
+    // 若已有卡片在预览，或已有定时器 => 不立刻播放
+    if(currentPreviewCard || previewTimer) return;
+    // 设置一个 1s 定时器 => 若用户在此卡片停留够久，才播放
+    previewTimer = setTimeout(() => {
+        startPreview(card);
+        previewTimer = null;
+    }, 1000);
+}
+
+// 处理鼠标离开
+function handleMouseLeave(e) {
+    const card = e.currentTarget;
+    // 如果正在等 1秒播放 => 取消
+    if(previewTimer) {
+        clearTimeout(previewTimer);
+        previewTimer = null;
+    }
+    // 如果当前预览卡片是此卡片 => 停止预览
+    if(currentPreviewCard === card) {
+        stopPreview(card);
+        currentPreviewCard = null;
+    }
+}
+
+/** 真正开始预览 */
+function startPreview(card) {
+    if(currentPreviewCard) return; // 已有卡片在预览
+    const video = card.querySelector('.hover-preview');
+    const img   = card.querySelector('.video-thumbnail');
+    if(!video) return;
+    currentPreviewCard = card;
+
+    // 显示并播放
+    video.style.opacity = 1;
+    video.style.pointerEvents = 'auto';
+    video.play();
+
+    // 封面图淡出
+    if(img) img.style.opacity = 0;
+}
+
+/** 停止预览 */
+function stopPreview(card) {
+    const video = card.querySelector('.hover-preview');
+    const img   = card.querySelector('.video-thumbnail');
+    if(!video) return;
+
+    // 停止并重置
+    video.pause();
+    video.currentTime = 0;
+    video.muted = true;
+    video.style.opacity = 0;
+    video.style.pointerEvents = 'none';
+
+    // 恢复封面
+    if(img) img.style.opacity = 1;
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
