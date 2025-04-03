@@ -1,0 +1,2 @@
+Module 3: Implementing a Machine Learning Pipeline with Amazon SageMaker
+Section 8: Hyperparameter and model tuning
